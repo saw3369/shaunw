@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>James Wylde - Azure Stack Support Engineer @Microsoft</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+  <link href="https://fonts.googleapis.com">
+  <link rel="icon" 
+      type="image/png" 
+      href="https://i.imgur.com/2hfyX3t.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPSPFKRC3X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GPSPFKRC3X');
+  </script>
+</head>
+
+<body>
+  <div class="navbar w3-mobile">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="container">
+    <div class="jumbotron">
+      <div class="jumbotron-text">
+        <img src="{{ url_for('static',filename='images/Picture.png') }}" class="profile-image" />
+        <h2>[wyldej]</h2>
+      </div>
+      <div class="jumbotron-social">
+        <ul class="ul-social">
+          <li class="li-social-links">
+            <a class="social" href="https://github.com/jameswylde" target="_blank"><i
+                class="fab fa-github"></i></a>
+          </li>
+          <li class="li-social-links">
+            <a class="social" href="https://www.linkedin.com/in/jamescw44/" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+          </li> 
+
+          <li class="li-social-links">
+            <a class="social" href="https://twitter.com/jamescw" target="_blank"><i class="fab fa-twitter"></i></a>
+          </li>
+
+
+
+
+          <!--
+          <li class="li-social-links">
+            <a class="social" href="/cv/" target="_blank"><i
+                class="fa fa-file-pdf"></i></a>
+              -->
+
+              
+          </li>
+          <br />
+          <br />
+        </ul>
+      </div>
+    </div>
+
+    <div class="row white box-shadow">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="about"></a>
+          <h1>About</h1>
+        </div>
+        <div class="content-body">
+          <p>
+            I'm James, I'm based in the UK and work with Azure Stack at Microsoft.
+          </p>
+
+          <p>
+             WyldeJ.com was created as a way to mimick a CI/CD pipeline; website was served using Python's web-framework, Flask, with some vanilla HTML & CSS, codebase sits on GitHub, pipeline is managed through AWS CodePipeLine, hosted in AWS Elastic Beanstalk with load balancers, domain and SSL certificate from AWS Route 53. Feel free to clone the repo for this site - (linked below).
+
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row white box-shadow">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="projects"></a>
+          <h1>Projects</h1>
+        </div>
+        <div class="content-body-projects">
+          <!-- CARD #1 -->
+          <div class="project-card">
+            <div class="project-content">
+              <h4>SysAd</h4>
+              <p>
+                SysAd.ps1 is a collection of PowerShell functions served under a terminal interface aimed at System Administrators or Support Engineers to quickly connect via terminal, either via PaExec (CMD) or Powershell, to assist in remote fixes and the automation of common tasks.
+              </p>
+              <a href="https://github.com/jameswylde/Powershell-SysAd" target="_blank">Github</a>
+              </div>
+              <br />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <h4>WyldeJ.com</h4>
+              <p>
+                WyldeJ.com was created as a way to mimick a CI/CD pipeline; website was served using Python's web-framework, Flask, with some vanilla HTML & CSS, codebase sits on GitHub, pipeline is managed through AWS CodePipeLine, hosted in AWS Elastic Beanstalk with load balancers, domain and SSL certificate from AWS Route 53.
+              </p>
+              <a href="https://github.com/jameswylde/jameswylde-page" target="_blank">Github</a>
+              </div>
+              <br />
+            </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <h4>Twitter Python Bot</h4>
+              <p>
+                 Python app using Tweepy to search for a user/hashtag/keyword and like a specified amount of Tweets, helping increase engagement, whilst printing the author and full tweet to console. Template for anyone wanting to create bots that monitor and engage with specific trends or users.
+              </p>
+              <a href="https://github.com/jameswylde/twitter-liker" target="_blank">Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side-content-sm"></div>
+    </div>
+
+
+      </div>
+      <div class="side-content-sm"></div>
+    </div>
+
+    
+    <div class="row white box-shadow">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="contact"></a>
+          <h1 class="white-text">Contact</h1>
+        </div>
+        <div class="contact content-body">
+          <form method="POST" action="https://formspree.io/f/mbjqaqwb">
+            <input type="hidden" name="_subject" value="Contact from Github form" />
+            <input type="email" name="_replyto" placeholder="Email Address" required />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>
+  </div>
+</body>
+
+
+  <div id="footer">
+      <p>  James Wylde 2021  </p>
+  </div>
+
+
+</html>

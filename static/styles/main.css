@@ -1,0 +1,318 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+  background: #1A1B26;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #16161F; 
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+}
+
+.navbar a {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.navbar a:hover {
+  color: #8FCF59;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+/*JUMBOTRON*/
+.jumbotron {
+  background-color: rgba(46, 46, 46, 0);
+  color: rgb(255, 255, 255);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 2px solid black;
+  height: 180px;
+}
+
+.jumbotron-text {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: rgb(235, 235, 235);
+  text-align: center;
+  padding-top: 90px;
+}
+
+.jumbotron-text h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.jumbotron-text p {
+  margin: 0;
+}
+
+/*SOCIAL LINKS*/
+.ul-social {
+  text-align: center;
+  padding-left: 0;
+}
+
+.li-social-links {
+  display: inline-block;
+  list-style: none;
+  transition-duration: 800ms;
+}
+
+.li-social-links:hover {
+  transition-duration: 800ms;
+  transform: scale(1.2);
+  color: #8FCF59;
+}
+
+.social {
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.social:hover {
+  color: #8FCF59;
+}
+
+/*CONTENT*/
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.side-content {
+  flex: 0 0 16.6%;
+}
+
+.main-content {
+  flex: 0 0 66.6%;
+  margin-bottom: 3rem;
+}
+
+.side-content-sm {
+  flex: 0 0 10%;
+}
+
+.main-content-lg {
+  flex: 0 0 80%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 2.2rem;
+  color: rgb(255, 255, 255);
+  /*text-transform: uppercase; */
+  text-align: center;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+h4 {
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: #ffffff;
+  ;
+}
+
+.content-body {
+  line-height: 1.5;
+  color: rgb(221, 221, 221);
+}
+
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #16161F;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.project-image {
+  flex: 1 0 auto;
+}
+
+.project-image img {
+  display: block;
+  height: 270px;
+  width: 390px;
+}
+
+.project-content {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  color: #8FCF59;
+  text-decoration: underline;
+}
+
+.black {
+  background: whitesmoke;
+  color: black;
+  text-align: center;
+}
+
+.contact {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input::placeholder {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
+.contact textarea::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.contact input,
+.contact textarea {
+  font-family: "Ubuntu", sans-serif;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 10px;
+  background: #16161F;
+  color: #fff;  
+  -webkit-transition: 0.5s ease all;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 0.5s ease all;
+}
+
+.contact textarea {
+  font-family: "Ubuntu", sans-serif;
+  height: 150px;
+  resize: none;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: rgb(255, 255, 255);
+}
+
+.contact button {
+  font-family: "Ubuntu", sans-serif;
+  display: block;
+  width: 100%;
+  background: #16161F;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: none;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  font-weight: 00;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+
+.contact button:hover {
+  background-color:#8FCF59;
+}
+
+.white-text {
+  color: rgb(230, 230, 230);
+}
+
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+
+
+#footer {
+  text-align: center;
+  position: bottom;
+  background-color: #16161F;
+  height: 50px;
+  line-height: 50px; 
+  color: #fff;
+}
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 0;
+	}
+	50% {
+		transform: translateY(-60vh) rotate(360deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-120vh) rotate(720deg);
+		opacity: 0;
+	}
+}
